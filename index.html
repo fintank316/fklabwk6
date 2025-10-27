@@ -1,0 +1,159 @@
+<!DOCTYPE html> <!-- Tells the browser this is an HTML5 document -->
+<html lang="en"> <!-- Sets the language of the page to English -->
+<head>
+  <meta charset="UTF-8"> <!-- Ensures proper character encoding -->
+  <title>Fintan Kirwan - CV</title> <!-- Title shown in browser tab -->
+
+  <!-- Bootstrap CSS for styling and components -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Bootstrap Navbar for site navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Fintan Kirwan</a> <!-- Brand name -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span> <!-- Hamburger icon for mobile -->
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> <!-- Navigation links aligned right -->
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap Carousel for showcasing highlights -->
+  <div id="cvCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- First slide -->
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center bg-info text-white p-5">
+          <h2>Senior IT Professional</h2>
+        </div>
+      </div>
+      <!-- Second slide -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center bg-success text-white p-5">
+          <h2>Project Leader at Wexford County Council</h2>
+        </div>
+      </div>
+      <!-- Third slide -->
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center bg-secondary text-white p-5">
+          <h2>Expert in Infrastructure & Security</h2>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#cvCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#cvCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Main container for CV content -->
+  <div class="cv-container container mt-5">
+
+    <!-- Header section -->
+    <header class="cv-header text-center">
+      <h1>Fintan Kirwan</h1>
+      <h3>Email: x24114618@student.ncirl.ie</h3>
+    </header>
+
+    <!-- Accordion for Education section -->
+    <section class="cv-section" id="education">
+      <h2>Education</h2>
+      <div class="accordion" id="educationAccordion">
+        <!-- First item -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              2024 – 2025: Certificate in Science in Computing
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#educationAccordion">
+            <div class="accordion-body">
+              National College of Ireland. NFQ Level 8
+            </div>
+          </div>
+        </div>
+        <!-- Second item -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              2024: Project Management
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+            <div class="accordion-body">
+              The Open College. NFQ Level 6
+            </div>
+          </div>
+        </div>
+        <!-- Third item -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              2001 – 2003: Diploma in Computer Programming
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#educationAccordion">
+            <div class="accordion-body">
+              Dun Laoghaire Institute of Further Education
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="cv-section" id="experience">
+      <h2>Experience</h2>
+      <div class="experience-container">
+        <div class="job">
+          <h4>April 2019 – Present</h4>
+          <p><strong>Wexford County Council</strong><br><em>Position: I.S. Project Leader</em><br>
+          Duties: Responsible for IT Technical Services (Infrastructure, Security, Helpdesk). Leadership, escalation management, and service team oversight.</p>
+        </div>
+        <div class="job">
+          <h4>Nov 2016 – Apr 2019</h4>
+          <p><strong>St. Michael’s Hospital</strong><br><em>Position: IT Manager</em><br>
+          Duties: Managed hospital-wide IT operations. Led teams, handled escalations, and oversaw networks, security, server upgrades, and installations.</p>
+        </div>
+        <div class="job">
+          <h4>Apr 2013 – Nov 2016</h4>
+          <p><strong>Laztech IT Services</strong><br><em>Position: Client Services Manager</em><br>
+          Duties: Led 8 engineers. Managed daily operations, escalations, and ISO 27001:2013 network documentation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section -->
+    <section class="cv-section" id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">IT Infrastructure & Security Management</div>
+        <div class="skill">Team Leadership & Escalation Handling</div>
+        <div class="skill">Helpdesk & Technical Support Oversight</div>
+        <div class="skill">Project Management & Strategic Planning</div>
+        <div class="skill">Network Configuration & ISO 27001 Compliance</div>
+        <div class="skill">Server Upgrades, Installations & Monitoring</div>
+        <div class="skill">Client Relations & Pre-Sales Engagement</div>
+      </div>
+    </section>
+
+  </div> <!-- End of CV container -->
+
+  <!-- Bootstrap JS for interactive components -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
